@@ -33,13 +33,15 @@ body.menu-open {
 }
 
 .announcement {
+  position: relative;
+  z-index: 45;
   display: flex;
   min-height: 38px;
   align-items: center;
   justify-content: center;
   gap: clamp(14px, 4vw, 34px);
   padding: 7px 16px;
-  background: var(--ink);
+  background: #102e25;
   color: #fff7e8;
   font-size: 0.88rem;
   font-weight: 850;
@@ -1008,8 +1010,15 @@ details p {
   }
 
   .announcement {
-    justify-content: flex-start;
-    overflow-x: auto;
+    justify-content: center;
+    gap: 12px;
+    overflow: visible;
+    padding: 7px 10px;
+    font-size: 0.76rem;
+  }
+
+  .announcement span:last-child {
+    display: none;
   }
 
   .hero h1 {
