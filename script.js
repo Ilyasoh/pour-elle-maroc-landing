@@ -3,9 +3,15 @@ const nav = document.querySelector("[data-nav]");
 const menuToggle = document.querySelector("[data-menu-toggle]");
 const colorButtons = document.querySelectorAll("[data-color]");
 const colorSelect = document.querySelector("[data-color-select]");
+const sizeSelect = document.querySelector("[data-size-select]");
 const orderForm = document.querySelector("[data-order-form]");
 const formStatus = document.querySelector("[data-form-status]");
 const mobileCta = document.querySelector("[data-mobile-cta]");
+const galleryImage = document.querySelector("[data-main-product-image]");
+const galleryButtons = document.querySelectorAll("[data-gallery-src]");
+const selectedColorLabel = document.querySelector("[data-selected-color]");
+const selectedSizeLabel = document.querySelector("[data-selected-size]");
+const sizeButtons = document.querySelectorAll("[data-size]");
 
 function closeMenu() {
   body.classList.remove("menu-open");
@@ -51,6 +57,54 @@ colorButtons.forEach((button) => {
 
     window.siteTrack?.("select_item", { color: selectedColor });
     document.querySelector("#order")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+});
+
+galleryButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const imageSource = button.getAttribute("data-gallery-src");
+    const selectedColor = button.getAttribute("data-gallery-color") || "Crème";
+
+    galleryButtons.forEach((item) => item.classList.remove("is-active"));
+    button.classList.add("is-active");
+
+    document.querySelectorAll(".mini-swatch").forEach((item) => {
+      item.classList.toggle("is-active", item.getAttribute("data-gallery-color") === selectedColor);
+    });
+
+    if (galleryImage && imageSource) {
+      galleryImage.src = imageSource;
+      galleryImage.alt = `Essence Noble ${selectedColor}`;
+    }
+
+    if (selectedColorLabel) {
+      selectedColorLabel.textContent = selectedColor;
+    }
+
+    if (colorSelect && selectedColor !== "Pack complet") {
+      colorSelect.value = selectedColor;
+    }
+
+    window.siteTrack?.("select_item", { color: selectedColor });
+  });
+});
+
+sizeButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const selectedSize = button.getAttribute("data-size") || "S";
+
+    sizeButtons.forEach((item) => item.classList.remove("is-active"));
+    button.classList.add("is-active");
+
+    if (selectedSizeLabel) {
+      selectedSizeLabel.textContent = selectedSize;
+    }
+
+    if (sizeSelect) {
+      sizeSelect.value = selectedSize;
+    }
+
+    window.siteTrack?.("select_item", { size: selectedSize });
   });
 });
 
