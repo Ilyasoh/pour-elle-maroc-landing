@@ -5,6 +5,7 @@ const colorButtons = document.querySelectorAll("[data-color]");
 const colorSelect = document.querySelector("[data-color-select]");
 const orderForm = document.querySelector("[data-order-form]");
 const formStatus = document.querySelector("[data-form-status]");
+const mobileCta = document.querySelector("[data-mobile-cta]");
 
 function closeMenu() {
   body.classList.remove("menu-open");
@@ -21,6 +22,21 @@ nav?.addEventListener("click", (event) => {
     closeMenu();
   }
 });
+
+function toggleMobileCta() {
+  if (!mobileCta) {
+    return;
+  }
+
+  const orderSection = document.querySelector("#order");
+  const orderTop = orderSection ? orderSection.getBoundingClientRect().top : Number.POSITIVE_INFINITY;
+  const shouldShow = window.scrollY > 420 && orderTop > window.innerHeight * 0.45;
+  mobileCta.classList.toggle("is-visible", shouldShow);
+}
+
+window.addEventListener("scroll", toggleMobileCta, { passive: true });
+window.addEventListener("resize", toggleMobileCta);
+toggleMobileCta();
 
 colorButtons.forEach((button) => {
   button.addEventListener("click", () => {

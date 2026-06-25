@@ -16,14 +16,15 @@
       property="og:description"
       content="باقة Essence Noble بسعر 349 DHS: روب مغربي، واقي شمس، Brume 71، Vasalaine، جهاز عناية، وهدية داخل الباقة."
     />
-    <meta property="og:image" content="assets/hero-pack.webp" />
+    <meta property="og:image" content="https://ilyasoh.github.io/pour-elle-maroc-landing/assets/hero-pack.webp" />
+    <link rel="canonical" href="https://ilyasoh.github.io/pour-elle-maroc-landing/" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Essence Noble | Pack Femme Marocaine" />
     <meta
       name="twitter:description"
       content="جمالك، طريقتك، ثقتك كل يوم. باقة كاملة بسعر الإطلاق 349 DHS."
     />
-    <meta name="twitter:image" content="assets/hero-pack.webp" />
+    <meta name="twitter:image" content="https://ilyasoh.github.io/pour-elle-maroc-landing/assets/hero-pack.webp" />
     <title>Essence Noble | Pack Femme Marocaine</title>
     <link rel="preload" href="assets/hero-pack.webp" as="image" />
     <link rel="stylesheet" href="styles.css" />
@@ -41,10 +42,10 @@
         "sku": "EN-PACK-349",
         "category": "Beauty and apparel gift pack",
         "image": [
-          "assets/hero-pack.webp",
-          "assets/campaign-main.webp",
-          "assets/robe-cream.webp",
-          "assets/robe-royal-blue.webp"
+          "https://ilyasoh.github.io/pour-elle-maroc-landing/assets/hero-pack.webp",
+          "https://ilyasoh.github.io/pour-elle-maroc-landing/assets/campaign-main.webp",
+          "https://ilyasoh.github.io/pour-elle-maroc-landing/assets/robe-cream.webp",
+          "https://ilyasoh.github.io/pour-elle-maroc-landing/assets/robe-royal-blue.webp"
         ],
         "additionalProperty": [
           {
@@ -64,7 +65,7 @@
           "priceCurrency": "MAD",
           "availability": "https://schema.org/InStock",
           "itemCondition": "https://schema.org/NewCondition",
-          "url": "./"
+          "url": "https://ilyasoh.github.io/pour-elle-maroc-landing/"
         }
       }
     </script>
@@ -105,6 +106,12 @@
     <script src="script.js" defer></script>
   </head>
   <body>
+    <div class="announcement" role="note">
+      <span>عرض الإطلاق 349 DHS</span>
+      <span>الدفع عند الاستلام</span>
+      <span>تأكيد الطلب قبل الإرسال</span>
+    </div>
+
     <header class="site-header" data-header>
       <a class="brand" href="#top" aria-label="Essence Noble home">
         <span class="brand-mark" aria-hidden="true">✦</span>
@@ -117,6 +124,7 @@
       <nav class="site-nav" data-nav aria-label="Primary navigation">
         <a href="#pack">محتوى الباقة</a>
         <a href="#colors">الألوان</a>
+        <a href="#trust">الثقة</a>
         <a href="#video">الفيديو</a>
         <a href="#order">الطلب</a>
       </nav>
@@ -147,9 +155,14 @@
           <p class="eyebrow" dir="ltr">PACK FEMME MAROCAINE</p>
           <h1 id="hero-title">جمالك، طريقتك، ثقتك كل يوم</h1>
           <p class="hero-copy">
-            باقة Essence Noble تجمع الروب المغربي الأنيق مع أساسيات العناية اليومية:
-            حماية من الشمس، بخاخ للجسم، ترطيب للشفاه، جهاز عناية، وهدية داخل الباقة.
+            عرض واحد يجمع روب مغربي أنيق مع أساسيات العناية اليومية: حماية من
+            الشمس، بخاخ للجسم، ترطيب للشفاه، جهاز عناية، وعلبة هدية جاهزة.
           </p>
+          <ul class="hero-value" aria-label="Essence Noble value stack">
+            <li>روب Essence Noble بالمقاس واللون اللي تختاري</li>
+            <li>4 منتجات عناية عملية داخل نفس الباقة</li>
+            <li>طلب سهل، تأكيد هاتفي، والدفع عند الاستلام</li>
+          </ul>
           <div class="hero-offer" aria-label="Launch price">
             <span>السعر</span>
             <strong dir="ltr">349 DHS</strong>
@@ -168,21 +181,29 @@
 
       <section class="proof-strip" aria-label="Essence Noble benefits">
         <div>
-          <strong>100%</strong>
-          <span>منتجات أصلية</span>
+          <strong>COD</strong>
+          <span>الدفع عند الاستلام</span>
         </div>
         <div>
-          <strong>5</strong>
-          <span>قطع داخل الباقة</span>
+          <strong>8</strong>
+          <span>ألوان للروب</span>
         </div>
         <div>
           <strong>S-XL</strong>
           <span>مقاسات متوفرة</span>
         </div>
         <div>
-          <strong dir="ltr">349 DHS</strong>
-          <span>عرض الإطلاق</span>
+          <strong>100%</strong>
+          <span>منتجات أصلية</span>
         </div>
+      </section>
+
+      <section class="offer-strip" aria-label="Launch offer">
+        <div>
+          <span class="section-kicker">عرض محدود حسب المخزون</span>
+          <strong>حجزي الباقة قبل ما يسالي اللون أو المقاس اللي بغيتي.</strong>
+        </div>
+        <a class="button button-dark" href="#order" data-track="begin_checkout">نحجز دابا</a>
       </section>
 
       <section class="section intro-section" id="pack">
@@ -261,6 +282,37 @@
         </div>
       </section>
 
+      <section class="section trust-section" id="trust">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">ثقة قبل الطلب</p>
+            <h2>كل خطوة واضحة قبل ما تخلصي.</h2>
+          </div>
+          <p>
+            الهدف هو طلب بسيط بلا توتر: كتخلي معلوماتك، كنأكدو اللون والمقاس
+            والتوصيل معاك، والدفع كيكون عند الاستلام.
+          </p>
+        </div>
+
+        <div class="trust-grid">
+          <article>
+            <span>01</span>
+            <h3>كتعمري الطلب</h3>
+            <p>الاسم، الهاتف، المدينة، اللون، والمقاس. ما كاين حتى أداء إلكتروني داخل الموقع.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>كنأكدو معاك</h3>
+            <p>كيتم التواصل معاك لتأكيد تفاصيل الطلب، الثمن، والمقاس قبل الإرسال.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>كتوصلك الباقة</h3>
+            <p>كتخلصي عند الاستلام حسب المدينة وشروط التوصيل المتاحة.</p>
+          </article>
+        </div>
+      </section>
+
       <section class="section color-section" id="colors">
         <div class="section-heading">
           <div>
@@ -275,37 +327,60 @@
 
         <div class="color-grid" aria-label="Available robe colors">
           <article class="color-card">
-            <img src="assets/robe-cream.webp" alt="Essence Noble cream robe pack" width="900" height="1200" loading="lazy" decoding="async" />
+            <img src="assets/robe-cream.webp" alt="Essence Noble cream robe pack" width="900" height="1200" decoding="async" />
             <button type="button" data-color="Crème">Crème</button>
           </article>
           <article class="color-card">
-            <img src="assets/robe-caramel.webp" alt="Essence Noble caramel robe pack" width="900" height="1200" loading="lazy" decoding="async" />
+            <img src="assets/robe-caramel.webp" alt="Essence Noble caramel robe pack" width="900" height="1200" decoding="async" />
             <button type="button" data-color="Caramel">Caramel</button>
           </article>
           <article class="color-card">
-            <img src="assets/robe-ivory.webp" alt="Essence Noble ivory robe pack" width="900" height="1200" loading="lazy" decoding="async" />
+            <img src="assets/robe-ivory.webp" alt="Essence Noble ivory robe pack" width="900" height="1200" decoding="async" />
             <button type="button" data-color="Ivoire">Ivoire</button>
           </article>
           <article class="color-card">
-            <img src="assets/robe-royal-blue.webp" alt="Essence Noble royal blue robe pack" width="900" height="1200" loading="lazy" decoding="async" />
+            <img src="assets/robe-royal-blue.webp" alt="Essence Noble royal blue robe pack" width="900" height="1200" decoding="async" />
             <button type="button" data-color="Bleu royal">Bleu royal</button>
           </article>
           <article class="color-card">
-            <img src="assets/robe-mint.webp" alt="Essence Noble mint robe pack" width="900" height="1200" loading="lazy" decoding="async" />
+            <img src="assets/robe-mint.webp" alt="Essence Noble mint robe pack" width="900" height="1200" decoding="async" />
             <button type="button" data-color="Menthe">Menthe</button>
           </article>
           <article class="color-card">
-            <img src="assets/robe-black.webp" alt="Essence Noble black robe pack" width="900" height="1200" loading="lazy" decoding="async" />
+            <img src="assets/robe-black.webp" alt="Essence Noble black robe pack" width="900" height="1200" decoding="async" />
             <button type="button" data-color="Noir">Noir</button>
           </article>
           <article class="color-card">
-            <img src="assets/robe-rose.webp" alt="Essence Noble pink robe pack" width="900" height="1200" loading="lazy" decoding="async" />
+            <img src="assets/robe-rose.webp" alt="Essence Noble pink robe pack" width="900" height="1200" decoding="async" />
             <button type="button" data-color="Rose">Rose</button>
           </article>
           <article class="color-card">
-            <img src="assets/robe-teal.webp" alt="Essence Noble teal robe pack" width="900" height="1200" loading="lazy" decoding="async" />
+            <img src="assets/robe-teal.webp" alt="Essence Noble teal robe pack" width="900" height="1200" decoding="async" />
             <button type="button" data-color="Bleu pétrole">Bleu pétrole</button>
           </article>
+        </div>
+      </section>
+
+      <section class="section objection-section">
+        <div class="objection-panel">
+          <div>
+            <p class="section-kicker">باش تختاري بثقة</p>
+            <h2>الأسئلة اللي كتجي قبل الشراء، جاوبنا عليها بوضوح.</h2>
+          </div>
+          <div class="objection-list">
+            <article>
+              <strong>خايفة من المقاس؟</strong>
+              <p>اختاري S أو M أو L أو XL، والتأكيد النهائي كيكون معاك قبل الإرسال.</p>
+            </article>
+            <article>
+              <strong>ما عرفتيش اللون؟</strong>
+              <p>شوفي gallery كامل، ومنين تضغطي على اللون كيمشي مباشرة للفورم.</p>
+            </article>
+            <article>
+              <strong>واش خاصك تخلصي دابا؟</strong>
+              <p>لا. الطلب كيتسجل فقط، والدفع كيكون عند الاستلام بعد التأكيد.</p>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -339,6 +414,11 @@
               <span>الباقة الكاملة</span>
               <strong dir="ltr">349 DHS</strong>
             </div>
+            <ul class="order-checklist">
+              <li>تأكيد اللون والمقاس قبل الإرسال</li>
+              <li>الدفع عند الاستلام</li>
+              <li>ما كاين حتى أداء إلكتروني داخل الموقع</li>
+            </ul>
           </div>
 
           <form class="order-form" data-order-form>
@@ -380,6 +460,7 @@
             </div>
             <button class="button button-dark button-full" type="submit">إرسال الطلب</button>
             <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+            <p class="privacy-note">معلوماتك تستعمل فقط لتأكيد الطلب والتواصل معك.</p>
           </form>
         </div>
       </section>
@@ -420,5 +501,12 @@
     </footer>
 
     <a class="floating-whatsapp" href="#order" data-whatsapp-link data-track="contact" hidden>واتساب</a>
+    <div class="mobile-cta" data-mobile-cta>
+      <div>
+        <span>Pack Essence Noble</span>
+        <strong dir="ltr">349 DHS</strong>
+      </div>
+      <a class="button button-dark" href="#order" data-track="begin_checkout">طلبي الآن</a>
+    </div>
   </body>
 </html>

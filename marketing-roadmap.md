@@ -3,7 +3,7 @@
 ## Technical Standard
 
 - Publish on HTTPS with one clean domain.
-- Replace every `https://YOUR-DOMAIN.com/` value in `merchant-feed-template.csv` after launch.
+- Current free GitHub Pages URL: `https://ilyasoh.github.io/pour-elle-maroc-landing/`.
 - Add the final domain to Open Graph image URLs if the sharing preview needs stricter platform support.
 - Submit the live URL and sitemap in Google Search Console.
 - Validate product structured data with Google's Rich Results Test.

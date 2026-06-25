@@ -4,7 +4,8 @@ window.ESSENCE_MARKETING = {
     name: "Essence Noble Pack Femme Marocaine",
     price: 349,
     currency: "MAD",
-    category: "Beauty and apparel gift pack"
+    category: "Beauty and apparel gift pack",
+    url: "https://ilyasoh.github.io/pour-elle-maroc-landing/"
   },
   whatsapp: {
     number: "",
